@@ -374,7 +374,7 @@ CREATE TABLE `{$this->url_table}` (
 		case 'single':
 		case 'term_archive':
 		case 'author_archive':
-		case 'other_page':
+		case 'other_page': case 'seo_files':
 			// get remote file
 			if (($content = $this->remote_get($url)) && isset($content['body'])) {
 				if ($blog_charset === 'UTF-8') {
